@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2876025B22C77C48001F9A15 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2876025A22C77C48001F9A15 /* WeatherData.swift */; };
 		63A618291C53C381007AF001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A618281C53C381007AF001 /* AppDelegate.swift */; };
 		63A6182B1C53C381007AF001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6182A1C53C381007AF001 /* ViewController.swift */; };
 		63A6182E1C53C381007AF001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A6182C1C53C381007AF001 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		1E4F99DB230EEACF9D1C15C9 /* Pods_BitcoinTicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinTicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2876025A22C77C48001F9A15 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		63A618251C53C381007AF001 /* BitcoinTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A618281C53C381007AF001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A6182A1C53C381007AF001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +44,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2876025922C77C2A001F9A15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2876025A22C77C48001F9A15 /* WeatherData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2876025C22C781FE001F9A15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63A6182C1C53C381007AF001 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2876025D22C78219001F9A15 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63A6182A1C53C381007AF001 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		370D12C07A4502FBB6C9C0BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +98,10 @@
 		63A618271C53C381007AF001 /* BitcoinTicker */ = {
 			isa = PBXGroup;
 			children = (
+				2876025922C77C2A001F9A15 /* Model */,
+				2876025C22C781FE001F9A15 /* View */,
+				2876025D22C78219001F9A15 /* Controller */,
 				63A618281C53C381007AF001 /* AppDelegate.swift */,
-				63A6182A1C53C381007AF001 /* ViewController.swift */,
-				63A6182C1C53C381007AF001 /* Main.storyboard */,
 				63A6182F1C53C381007AF001 /* Assets.xcassets */,
 				63A618311C53C381007AF001 /* LaunchScreen.storyboard */,
 				63A618341C53C381007AF001 /* Info.plist */,
@@ -88,7 +115,6 @@
 				C73CA7CAD177EEE687084849 /* Pods-BitcoinTicker.debug.xcconfig */,
 				7F5E2289F0B23F7B5DCFD308 /* Pods-BitcoinTicker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A6182B1C53C381007AF001 /* ViewController.swift in Sources */,
+				2876025B22C77C48001F9A15 /* WeatherData.swift in Sources */,
 				63A618291C53C381007AF001 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
